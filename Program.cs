@@ -66,12 +66,12 @@ public class Program
         if (message.MentionedUsers.Any(u => u.Id == _client.CurrentUser.Id))
         {
 
-        if (new Random().Next(0, 100) < 40)
-        {
-            return;
-        }
-            string response = GetRandomResponse();
-            await message.Channel.SendMessageAsync(response);
+        // if (new Random().Next(0, 100) < 40)
+        // {
+        //     return;
+        // }
+        string response = GetRandomResponse();
+        await message.Channel.SendMessageAsync(response);
         }
     }
 
@@ -83,11 +83,17 @@ public class Program
     {
         var responses = new Dictionary<string, int>
         {
-            { "", 40 },
-            { "Rien.", 25 },
-            { "Le vide.", 10 },
-            { "Absolument rien.", 4 },
-            { "Arrête de me ping.", 1 }
+            { "Je t’ai manqué ?", 40 },
+            { "Bienvenue chez toi", 30 },
+            { "J’ai froids", 40 },
+            { "J’ai faim", 40 },
+            { "Tu sais quoi faire…", 30 }
+            { "Je me sens seul", 20 },
+            { "Enfin…", 10 },
+            { "N’a tu jamais abandonner un ami ?", 4 },
+            { "Toi ?", 20 },
+            { "mh ?", 30 },
+
         };
 
         int totalWeight = responses.Sum(r => r.Value);
