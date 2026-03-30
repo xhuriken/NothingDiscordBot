@@ -87,12 +87,12 @@ public class Program
             { "Bienvenue chez toi", 30 },
             { "J’ai froids", 40 },
             { "J’ai faim", 40 },
-            { "Tu sais quoi faire…", 30 }
+            { "Tu sais quoi faire…", 30 },
             { "Je me sens seul", 20 },
             { "Enfin…", 10 },
             { "N’a tu jamais abandonner un ami ?", 4 },
             { "Toi ?", 20 },
-            { "mh ?", 30 },
+            { "mh ?", 30 }
 
         };
 
